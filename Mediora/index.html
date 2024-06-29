@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediora</title>
+    <link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+        <div class="contact">
+            <div class="phn-mail">
+                <div class="phn">
+                    <img src="./Icons/phone.svg" width="20" height="20" /><p>(+968) 24702666</p>
+                </div>
+               <div class="mail">
+                    <img src="./Icons/mail.svg" width="20" height="20"/><p>info@mediora.com</p>
+               </div>
+            </div>
+            <div class="flag">
+                <img src="./Icons/omanflag.svg" width="28" height="28"/> <p>العربية</p>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="logo">
+                <img src="./Icons/logo.svg" height="25px"/>
+            </div>
+            <ul>
+                <li>Who We Are</li>
+                <li>What We Do <img src="./Icons/down.svg" width="20" height="20"/></li>
+                <li>Properties <img src="./Icons/down.svg" width="20" height="20"/></li>
+                <li>CSR</li>
+                <li>Media Center</li>
+                <li>Blogs</li>
+                <li>Contact</li>
+                <button>Login / Register</button>
+            </ul>
+        </div>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Find Your Future <br />Dream Home</h1>
+                <p class="sub-head">We have the most listings and constant updates. Best Listings and constant 
+                    updates you’ll never miss out!</p>
+            </div>
+            <div class="form">
+                <div class="tab">
+                    <p class="tab-rent">For Rent</p>
+                    <p class="tab-sale">For Sale</p>
+                </div>
+                <div class="for-rent">
+                    <div class="first-row">
+                        <div class="types">
+                            <p class="light">Types</p>
+                            <p class="bold">All Types <img src="./Images/down-solid.png"/></p>
+                        </div>
+                        <img class="line" src="./Images/Line.png"/>
+                        <div class="cities">
+                            <p class="light">Cities</p>
+                            <p class="bold">All Cities  <img src="./Images/down-solid.png"/></p>
+                        </div>
+                    </div>
+
+                    <div class="second-row">
+                        <div class="areas">
+                            <p class="light">Areas</p>
+                            <p class="bold">All Areas <img src="./Images/down-solid.png"/></p>
+                        </div>
+                        <img class="line" src="./Images/Line.png"/>
+                        <div class="bedroom">
+                            <p class="light">Bedroom</p>
+                            <p class="bold">01<img src="./Images/down-solid.png"/></p>
+                        </div>
+                        <img class="line" src="./Images/Line.png"/>
+                        <div class="bath">
+                            <p class="light">Bath</p>
+                            <p class="bold">01<img src="./Images/down-solid.png"/></p>
+                        </div>
+                    </div>
+                    
+                    <label class="light">Price range <span class="range-input"> OMR 0 to OMR 5,000</span></label>
+                    <input type="range" class="slider" min="0" max="5000" value="0"/>
+
+                    <div class="search">
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <img onclick="searchClick()" src="./Images/add.png" width="28px" height="28px"/>
+                            <p class="bold">Advanced Search</p>
+                        </div>
+                        <button class="form-btn">Search</button>
+                    </div>
+                    <div class="search-result" id="clicked">
+                        
+                            <div class="light check">
+                                <svg class="checkbox" viewBox="0 0 24 24">
+                                    <rect width="20" height="20" x="2" y="2" rx="4" ry="4"></rect>
+                                    <path d="M6 12l4 4 8-8"></path>
+                                </svg>
+                                <p>Ocean View </p> 
+                            </div>
+                            <div class="light check">
+                                <svg class="checkbox" viewBox="0 0 24 24">
+                                    <rect width="20" height="20" x="2" y="2" rx="4" ry="4"></rect>
+                                    <path d="M6 12l4 4 8-8"></path>
+                                </svg>
+                                <p>Gym</p>
+                            </div>
+                            <div class="light check">
+                                <svg class="checkbox" viewBox="0 0 24 24">
+                                    <rect width="20" height="20" x="2" y="2" rx="4" ry="4"></rect>
+                                    <path d="M6 12l4 4 8-8"></path>
+                                </svg>
+                                <p>Pool</p>
+                            </div>
+                            <div class="light check">
+                                <svg class="checkbox" viewBox="0 0 24 24">
+                                    <rect width="20" height="20" x="2" y="2" rx="4" ry="4"></rect>
+                                    <path d="M6 12l4 4 8-8"></path>
+                                </svg>
+                                <p>Washing</p>
+                            </div>
+                            <div class="light check">
+                                <svg class="checkbox" viewBox="0 0 24 24">
+                                    <rect width="20" height="20" x="2" y="2" rx="4" ry="4"></rect>
+                                    <path d="M6 12l4 4 8-8"></path>
+                                </svg>
+                                <p>Balcony</p>
+                            </div>
+                            <div class="light check">
+                                <svg class="checkbox" viewBox="0 0 24 24">
+                                    <rect width="20" height="20" x="2" y="2" rx="4" ry="4"></rect>
+                                    <path d="M6 12l4 4 8-8"></path>
+                                </svg>
+                                <p>Laundry </p>
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="aboutus">
+            <img class="aboutimg" src="./Images/oceanwp-architect.png" />
+            <img class="excellence" src="./Images/excellence.png"/>
+            <div class="abt-location">
+                <img src="./Icons/location.svg" width="40px" height="40px"/>
+                <p>Easy to find your dream property</p>
+            </div>
+            <div class="about-content">
+                <h2>About Us</h2>
+                <p>The largest and only one-stop-shop for the complete range of real estate products and services in Oman,
+                     our team of over 150 skilled and experienced professionals are always there to help you with real estate solutions.
+                    <br /><br />
+                     We leverage our decades of experience, expertise and knowledge in different areas to bring you greater value.
+                     Whatever your real estate requirements, we are there to offer you seamless and integrated service that is second to none.</p>
+                     <button>Know More About Us</button>
+                    </div>
+        </section>
+        <section class="featured-rent">
+            <div class="rent-heading">
+                <h2>Featured For Rent</h2>
+                <button>See All Properties </button>
+            </div>
+            <div class="cards-rent">
+                <div class="card-rent ">
+                    <div class="featured-rent-btn">
+                        <p class="featured">Featured</p>
+                        <p class="rent">For Rent</p>
+                    </div>
+                    <div class="heart-rent">
+                        <img src="./Icons/heart.svg"/>
+                        <img src="./Icons/compare.svg"/>
+                    </div>
+                    <div class="card-content">
+                        <p>Al Mir Building – Showroom For Rent...</p>
+                        <p>OMR 1,500 <span>/ per month</span></p>
+                    </div>
+                    <img src="./Images/card-rent1.png"/>
+                </div>
+                <div class="card-rent ">
+                    <div class="featured-rent-btn">
+                        <p class="featured">Featured</p>
+                        <p class="rent">For Rent</p>
+                    </div>
+                    <div class="heart-rent">
+                        <img src="./Icons/heart.svg"/>
+                        <img src="./Icons/compare.svg"/>
+                    </div>
+                    <div class="card-content">
+                        <p>Al Mir Building – Showroom For Rent...</p>
+                        <p>OMR 1,500 <span>/ per month</span></p>
+                    </div>
+                    <img src="./Images/card-rent2.png"/>
+                </div>
+                <div class="card-rent ">
+                    <div class="featured-rent-btn">
+                        <p class="featured">Featured</p>
+                        <p class="rent">For Rent</p>
+                    </div>
+                    <div class="heart-rent">
+                        <img src="./Icons/heart.svg"/>
+                        <img src="./Icons/compare.svg"/>
+                    </div>
+                    <div class="card-content">
+                        <p>Al Mir Building – Showroom For Rent...</p>
+                        <p>OMR 1,500 <span>/ per month</span></p>
+                    </div>
+                    <img src="./Images/card-rent3.png"/>
+                </div>
+                <div class="card-rent ">
+                    <div class="featured-rent-btn">
+                        <p class="featured">Featured</p>
+                        <p class="rent">For Rent</p>
+                    </div>
+                    <div class="heart-rent">
+                        <img src="./Icons/heart.svg"/>
+                        <img src="./Icons/compare.svg"/>
+                    </div>
+                    <div class="card-content">
+                        <p>Al Mir Building – Showroom For Rent...</p>
+                        <p>OMR 1,500 <span>/ per month</span></p>
+                    </div>
+                    <img src="./Images/card-rent4.png"/>
+                </div>
+                <div class="card-rent ">
+                    <div class="featured-rent-btn">
+                        <p class="featured">Featured</p>
+                        <p class="rent">For Rent</p>
+                    </div>
+                    <div class="heart-rent">
+                        <img src="./Icons/heart.svg"/>
+                        <img src="./Icons/compare.svg"/>
+                    </div>
+                    <div class="card-content">
+                        <p>Al Mir Building – Showroom For Rent...</p>
+                        <p>OMR 1,500 <span>/ per month</span></p>
+                    </div>
+                    <img src="./Images/card-rent5.png"/>
+                </div>
+                <div class="card-rent ">
+                    <div class="featured-rent-btn">
+                        <p class="featured">Featured</p>
+                        <p class="rent">For Rent</p>
+                    </div>
+                    <div class="heart-rent">
+                        <img src="./Icons/heart.svg"/>
+                        <img src="./Icons/compare.svg"/>
+                    </div>
+                    <div class="card-content">
+                        <p>Al Mir Building – Showroom For Rent...</p>
+                        <p>OMR 1,500 <span>/ per month</span></p>
+                    </div>
+                    <img src="./Images/card-rent6.png"/>
+                </div>
+                <div class="card-rent ">
+                    <div class="featured-rent-btn">
+                        <p class="featured">Featured</p>
+                        <p class="rent">For Rent</p>
+                    </div>
+                    <div class="heart-rent">
+                        <img src="./Icons/heart.svg"/>
+                        <img src="./Icons/compare.svg"/>
+                    </div>
+                    <div class="card-content">
+                        <p>Al Mir Building – Showroom For Rent...</p>
+                        <p>OMR 1,500 <span>/ per month</span></p>
+                    </div>
+                    <img src="./Images/card-rent7.png"/>
+                </div>
+                <div class="card-rent ">
+                    <div class="featured-rent-btn">
+                        <p class="featured">Featured</p>
+                        <p class="rent">For Rent</p>
+                    </div>
+                    <div class="heart-rent">
+                        <img src="./Icons/heart.svg"/>
+                        <img src="./Icons/compare.svg"/>
+                    </div>
+                    <div class="card-content">
+                        <p>Al Mir Building – Showroom For Rent...</p>
+                        <p>OMR 1,500 <span>/ per month</span></p>
+                    </div>
+                    <img src="./Images/card-rent8.png"/>
+                </div>
+            </div>
+        </section>
+        <section class="data">
+            <h2>We aspire to be Oman’s most admired real <br />estate company</h2>
+            <div class="data-content">
+                <div>
+                    <p class="num">45</p>
+                    <p class="words">Years in Business</p>
+                </div>
+                <div>
+                    <p class="num">4,000,000/sqf</p>
+                    <p class="words">Constructed</p>
+                </div>
+                <div>
+                    <p class="num">2,500+</p>
+                    <p class="words">Units under managemenet</p>
+                </div>
+                <div>
+                    <p class="num">OMR 100,000,000</p>
+                    <p class="words">Assets under management</p>
+                </div>
+                <div>
+                    <p class="num">3,000</p>
+                    <p class="words">Valuations per Year</p>
+                </div>
+            </div>
+        </section>
+        <section class="featured-sale">
+            <div class="sale-heading">
+                <h2>Featured For Sale</h2>
+                <button>See All Properties </button>
+            </div>
+            <div class="cards-sale">
+                
+                <div class="card-sale ">
+                    <div class="featured-rent-btn">
+                        <p class="featured">Featured</p>
+                        <p class="rent">For Sale</p>
+                    </div>
+                    <div class="heart">
+                        <img src="./Icons/heart.svg"/>
+    
+                        <img src="./Icons/compare.svg"/>
+                    </div>
+                    <div class="sale-content">
+                        <p>Distinctive residential lands for sale in Sohar / Al...</p>
+                        <p>OMR 1,5000</p>
+                    </div>
+                    <img src="./Images/sales.png" />
+                </div>
+
+
+                <div class="card-sale ">
+                    <div class="featured-rent-btn">
+                        <p class="featured">Featured</p>
+                        <p class="rent">For sale</p>
+                    </div>
+                    <div class="heart">
+                        <img src="./Icons/heart.svg"/>
+                        <img src="./Icons/compare.svg"/>
+                    </div>
+                    <div class="sale-content">
+                        <p>Distinctive residential lands for sale in Sohar / Al...</p>
+                        <p>OMR 1,5000</p>
+                    </div>
+                    <img src="./Images/sales.png" />
+                </div>
+
+
+                <div class="card-sale ">
+                    <div class="featured-rent-btn">
+                        <p class="featured">Featured</p>
+                        <p class="rent">For Sale</p>
+                    </div>
+                    <div class="heart">
+                        <img src="./Icons/heart.svg"/>
+
+                        <img src="./Icons/compare.svg"/>
+                    </div>
+                    <div class="sale-content">
+                        <p>Distinctive residential lands for sale in Sohar / Al...</p>
+                        <p>OMR 1,5000</p>
+                    </div>
+                    <img src="./Images/sales.png" />
+                </div>
+                
+            </div>
+        </section>
+        <section class="blogs">
+            <h2>From Our Blogs</h2>
+            <div class="blog-content">
+                <div class="blog-card">
+                    <img src="./Images/blog1.png"/>
+                    <p class="date">July 2, 2020</p>
+                    <p class="head">Oil price fall and real estate market</p>
+                    <p class="sub">Oil Prices have dropped significantly in the last year. How has the real 
+                        estate market in Oman reacted and what does the future hold?...</p>
+                </div>
+                <div class="blog-card">
+                    <img src="./Images/blog2.png"/>
+                    <p class="date">July 2, 2020</p>
+                    <p class="head">Oil price fall and real estate market</p>
+                    <p class="sub">Oil Prices have dropped significantly in the last year. How has the real 
+                        estate market in Oman reacted and what does the future hold?...</p>
+                </div>
+                <div class="blog-card">
+                    <img src="./Images/blog3.png"/>
+                    <p class="date">July 2, 2020</p>
+                    <p class="head">Oil price fall and real estate market</p>
+                    <p class="sub">Oil Prices have dropped significantly in the last year. How has the real 
+                        estate market in Oman reacted and what does the future hold?...</p>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="footer-partition">
+            <div class="footer-content">
+                <img src="./Icons/logo-footer.svg" height="30px" width="190px"/>
+                <p>With an impressive record spanning over three decades, across two family generations, 
+                    Al Habib’s success has been fueled by the sound reputation it has established over the years.<br /><br />
+
+                    As the largest and only integrated realty company in Oman, offering a complete range of products and services
+                     – in property management, valuation, brokering, feasibility studies, contracting and property development – the Company
+                      has earned the confidence of the business community in Oman. 
+                    They recognize that Al Habib’s extensive experience and knowhow assures them greater value and unmatched expertise.</p>
+            </div>
+            
+            <div class="footer-contact">
+                <div class="newsletter">
+                    <p class="footer-head">Newsletter</p>
+                        <input type="email" placeholder="Enter your email"/>
+                        <button  class="subscribe">Subscribe</button>
+                </div>
+                
+                <div class="site-contact">
+                    <div>
+                        <p class="footer-head">Sitemap</p>
+                        <div class="sitemap">
+                            <div>
+                                <p>Who We Are</p>
+                                <p>What We Do</p>
+                                <p>Properties</p>
+                                <p>CSR</p>  
+                            </div>
+                        <div>
+                            <p>Media Center</p>
+                            <p>Blogs</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="footer-head">Contact Info</p>
+                        <div class="contact-info">
+                            <div class="span">
+                                <p>Location</p>
+                                <p>Phone</p>
+                                <p>Fax</p>
+                                <p>Mail</p>
+                            </div>
+                            <div>
+                                <p>P.O Box: 2663, Ruwi 112</p>
+                                <p>(+968) 24702666</p>
+                                <p>(+968) 24703666</p>
+                                <p>info@mediora.com</p>
+                            </div>
+                        </div> 
+                    </div>
+                </div>   
+            </div>
+        </div>
+            <div class="copyrights">
+                <p>© Mediora 1978 - 2023, All Rights Reserved</p>
+                <div class="social-icons">
+                    <img src="./Icons/whatsapp.svg"/>
+                    <img src="./Icons/facebook.svg"/>
+                    <img src="./Icons/twitter.svg"/>
+                    <img src="./Icons/linkedin.svg"/>
+                    <img src="./Icons/instagram.svg"/>
+                </div>
+            </div>
+        </section>
+       
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
