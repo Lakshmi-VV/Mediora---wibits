@@ -16,4 +16,5 @@ To run this project locally, you will need:
 ### Clone the Repository
 
 You can clone the repository using Git or download the ZIP file directly.
- 
+```bash
+git clone https://github.com/Lakshmi-VV/Mediora---wibits
