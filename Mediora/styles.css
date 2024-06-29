@@ -481,7 +481,8 @@ input:focus{
     display: flex;
     gap: 24px;
 }
-@media ((max-width:900px) and (min-width:400px)){
+
+@media ((max-width:1024px) and (min-width:425px)){
     .footer{
         padding: 70px 50px;
     }
@@ -601,7 +602,7 @@ input:focus{
     }
     .cards-rent{
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 17px;
     }
     .cards-sale{
@@ -621,7 +622,7 @@ input:focus{
     }
     .card-rent img{
         width: 100%;
-        height: 100%;
+        height:100%;
         transition: 0.2s;
     }
 .heart{
@@ -630,8 +631,8 @@ input:focus{
     width: 20px;
     height: 20px;
     z-index: 1;
-    margin-top: 65%;
-    left: 80%;
+    margin-top: 85%;
+    left: 85%;
     position: absolute;
 }
 
@@ -664,7 +665,7 @@ input:focus{
     border-radius: 5px;
     padding: 12px;
     margin:15px 15px;
-    margin-top: 97%;
+    margin-top: 95%;
     position: absolute;
     z-index: 1;
     width: 90%;
@@ -676,10 +677,10 @@ input:focus{
     border-radius: 5px;
     padding: 12px;
     margin:15px 15px;
-    margin-top: 72%;
+    margin-top: 80%;
     position: absolute;
     z-index: 1;
-    width: 90%;
+    width: 60%;
 }
 .card-content span{
     color: #777777;
@@ -721,7 +722,7 @@ h2{
     font-weight: 600;
     font-size: 12px;
     padding:20px 30px;
-    top: 30%;
+    top: 40%;
     left: 50%;
     gap: 10px;
 }
@@ -888,7 +889,8 @@ h1{
 
 }
 
-@media (max-width:400px){
+@media (max-width:426px){
+   
     .footer{
         padding: 50px 30px;
     }
