@@ -1,4 +1,4 @@
-# Mediora - wibits
+# Mediora
 This project demonstrates how to create a responsive mobile menu using HTML, CSS, and JavaScript.
 
 ## Features
